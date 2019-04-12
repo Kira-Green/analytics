@@ -1,6 +1,11 @@
 import React, { Component } from "react";
-
+import ReactGA from "react-ga";
 import "./App.css";
+
+function initializeReactGA() {
+	ReactGA.initialize("UA-138205808-1");
+	ReactGA.pageview("/homepage");
+}
 
 class App extends Component {
 	render() {
